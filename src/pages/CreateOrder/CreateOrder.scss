@@ -1,0 +1,142 @@
+.createOrder {
+	padding-bottom: 80px;
+	&__content {
+		width: 50%;
+		display: flex;
+		flex-direction: column;
+		row-gap: 30px;
+		padding-bottom: 80px;
+	}
+	&__block {
+		display: flex;
+		width: 100%;
+		column-gap: 30px;
+	}
+	&__title {
+		font-weight: 600;
+		font-size: 24px;
+		padding: 60px 0;
+		color: #000000;
+	}
+	&__subtitle {
+		font-weight: 600;
+		font-size: 18px;
+		color: #000000;
+	}
+	&__label {
+		width: 100%;
+		&-title {
+			font-weight: 500;
+			font-size: 18px;
+		}
+		&-textarea {
+			width: 100%;
+			font-weight: 500;
+			font-size: 16px;
+			height: 100%;
+			resize: none;
+			padding: 18px 20px 9px;
+			background: #f6fafd;
+			border-bottom: 1px solid #f2f0fe;
+			&.error {
+				border-bottom: 1px solid #ed1b2e;
+			}
+		}
+		&-field {
+			width: 100%;
+			font-weight: 500;
+			font-size: 16px;
+			background: #f6fafd;
+			padding: 18px 20px 9px;
+			border-bottom: 1px solid #f2f0fe;
+			&.error {
+				border-bottom: 1px solid #ed1b2e;
+			}
+		}
+		&-select {
+			width: 100%;
+			font-weight: 500;
+			font-size: 16px;
+			background: #f6fafd;
+			padding: 18px 20px 9px;
+			border-bottom: 1px solid #f2f0fe;
+			&.error {
+				border-bottom: 1px solid #ed1b2e;
+			}
+		}
+		&-option {
+			background: #f2f0fe;
+			border-radius: 20px;
+			border: none;
+		}
+	}
+	&__error {
+		display: flex;
+		margin-top: 5px;
+		align-items: center;
+		column-gap: 3px;
+		&-text {
+			font-size: 15px;
+			color: #ed1b2e;
+		}
+	}
+	&__navButtons {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		&-prev {
+			font-weight: 600;
+			font-size: 20px;
+			background: #f2f0fe;
+			border-radius: 50px;
+			color: #656084;
+			padding: 18px 88px;
+		}
+		&-next {
+			font-weight: 600;
+			font-size: 20px;
+			color: #f6fafd;
+			background: #1dbf73;
+			border-radius: 50px;
+			padding: 18px 43px;
+		}
+	}
+	&__doc {
+		width: 70%;
+		border: 0.789474px solid #f2f0fe;
+		border-radius: 20px;
+		padding: 20px 44px;
+		&-upload {
+			display: flex;
+			width: 100%;
+			height: 150px;
+			justify-content: center;
+			flex-direction: column;
+			align-items: center;
+			background: #f2f0fe;
+			border: 0.789474px dashed #dcdfe6;
+			border-radius: 3.15789px;
+			&-text {
+				font-weight: 600;
+				font-size: 20px;
+				color: #fba457;
+			}
+		}
+		&-files {
+			padding-top: 60px;
+			display: flex;
+			flex-direction: column;
+			row-gap: 24px;
+			&-item {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				&-left {
+					display: flex;
+					align-items: center;
+					column-gap: 5px;
+				}
+			}
+		}
+	}
+}

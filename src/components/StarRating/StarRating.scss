@@ -1,0 +1,7 @@
+.grade {
+	display: flex;
+	width: 100%;
+	&__star {
+		width: 30px;
+	}
+}

@@ -1,0 +1,139 @@
+.register {
+	&__content {
+		display: flex;
+		justify-content: space-between;
+		column-gap: 150px;
+	}
+	&__left {
+		width: 40%;
+		padding: 20px 0 100px;
+	}
+	&__subtitle {
+		font-weight: 400;
+		font-size: 16px;
+		color: #2d3748;
+		padding: 60px 0 12px;
+	}
+	&__form {
+		display: flex;
+		flex-direction: column;
+		row-gap: 32px;
+		width: 100%;
+	}
+	&__btn {
+		font-weight: 700;
+		font-size: 18px;
+		color: #ffffff;
+		padding: 15px 0 13px;
+		background: #04c45c;
+		border-radius: 100px;
+		transition: 0.5s ease-in-out;
+		&:hover {
+			color: #04c45c;
+			background: #f2f0fe;
+		}
+	}
+	&__label {
+		&-title {
+			font-weight: 500;
+			font-size: 18px;
+		}
+		width: 100%;
+	}
+	&__field {
+		width: 100%;
+		font-weight: 500;
+		font-size: 16px;
+		padding: 18px 20px 9px;
+		border-bottom: 1px solid #f2f0fe;
+		&.error {
+			border-bottom: 1px solid #ed1b2e;
+		}
+	}
+	&__title {
+		font-weight: 700;
+		font-size: 30px;
+		color: #1a202c;
+	}
+	&__role {
+		display: flex;
+		align-items: center;
+		column-gap: 20px;
+		font-weight: 500;
+		font-size: 18px;
+		color: #000000;
+		/* для элемента input c type="radio" */
+		&-input {
+			position: absolute;
+			z-index: -1;
+			opacity: 0;
+		}
+		/* создание в label псевдоэлемента  before со следующими стилями */
+		&-input + label::before {
+			content: '';
+			display: inline-block;
+			width: 24px;
+			height: 24px;
+			flex-shrink: 0;
+			margin-bottom: -3px;
+			flex-grow: 0;
+			margin-right: 20px;
+			border: 2px solid #b0aad0;
+			border-radius: 50%;
+			background-repeat: no-repeat;
+			background-position: center center;
+			background-size: 50% 50%;
+		}
+		/* стили при наведении курсора на радио */
+		&-input:not(:disabled):not(:checked) + label:hover::before {
+			border-color: #ccffb3;
+		}
+		/* стили для активной радиокнопки (при нажатии на неё) */
+		&-input:not(:disabled):active + label::before {
+			background-color: #ccffb3;
+			border-color: #ccffb3;
+		}
+		/* стили для радиокнопки, находящейся в фокусе */
+		&-input:focus + label::before {
+			box-shadow: 0 0 0 0.2rem rgba(38, 255, 0, 0.25);
+		}
+		/* стили для радиокнопки, находящейся в фокусе и не находящейся в состоянии checked */
+		&-input:focus:not(:checked) + label::before {
+			border-color: #04c45c;
+		}
+		/* стили для радиокнопки, находящейся в состоянии checked */
+		&-input:checked + label::before {
+			border-color: #04c45c;
+			background-color: #04c45c;
+		}
+		&-item {
+			display: flex;
+			column-gap: 5px;
+			align-items: center;
+		}
+	}
+	&__error {
+		display: flex;
+		margin-top: 5px;
+		align-items: center;
+		column-gap: 3px;
+		&-text {
+			font-size: 15px;
+			color: #ed1b2e;
+		}
+	}
+	&__question {
+		width: 100%;
+		margin-top: 20px;
+		display: flex;
+		justify-content: center;
+		&-text {
+			font-weight: 500;
+			font-size: 16px;
+			color: #616161;
+		}
+		&-link {
+			color: #fba457;
+		}
+	}
+}

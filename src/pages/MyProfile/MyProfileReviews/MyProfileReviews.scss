@@ -1,0 +1,76 @@
+.myProfile__reviews {
+	padding-bottom: 80px;
+	&-title {
+		font-weight: 600;
+		font-size: 24px;
+		letter-spacing: 0.02em;
+		color: #000000;
+	}
+	&-tab {
+		display: flex;
+		column-gap: 40px;
+		margin: 20px 0 40px;
+		&-btn {
+			font-weight: 400;
+			font-size: 16px;
+			color: #000000;
+			&.active {
+				font-weight: 600;
+				color: #1dbf73;
+			}
+		}
+	}
+	&-more {
+		margin-top: 40px;
+		display: flex;
+		justify-content: center;
+		&-btn {
+			padding: 16px 48px;
+			font-weight: 600;
+			font-size: 18px;
+			border: 1px solid #1dbf73;
+			border-radius: 40px;
+			color: #1dbf73;
+		}
+	}
+	&-row {
+		display: flex;
+		column-gap: 30px;
+		row-gap: 40px;
+		flex-wrap: wrap;
+	}
+	&-card {
+		width: calc(33.33333% - 20px);
+		background: #f6fafd;
+		padding: 20px;
+		border: 1px solid #f2f0fe;
+		border-radius: 20px;
+		display: flex;
+		flex-direction: column;
+		row-gap: 20px;
+		&-top {
+			display: flex;
+			column-gap: 20px;
+			align-items: center;
+		}
+		&-avatar {
+			width: 80px;
+			height: 80px;
+			border-radius: 50%;
+		}
+		&-name {
+			font-weight: 600;
+			font-size: 18px;
+		}
+		&-info {
+			display: flex;
+			flex-direction: column;
+			row-gap: 20px;
+		}
+		&-text {
+			font-weight: 400;
+			font-size: 14px;
+			line-height: 17px;
+		}
+	}
+}

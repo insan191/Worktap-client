@@ -1,0 +1,37 @@
+.home__guide {
+	padding: 100px 0;
+	&-title {
+		font-weight: 600;
+		font-size: 24px;
+		letter-spacing: 0.02em;
+	}
+	&-subtitle {
+		font-weight: 400;
+		font-size: 16px;
+		padding: 20px 0 50px;
+	}
+	&-row {
+		display: flex;
+		gap: 30px;
+	}
+	&-card {
+		display: flex;
+		flex-direction: column;
+		row-gap: 20px;
+		width: calc(33.33333% - 20px);
+		&-icon {
+			width: 83px;
+			height: 83px;
+		}
+		&-title {
+			font-weight: 600;
+			font-size: 18px;
+			line-height: 22px;
+		}
+		&-desc {
+			font-weight: 400;
+			font-size: 14px;
+			line-height: 17px;
+		}
+	}
+}

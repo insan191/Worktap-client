@@ -1,0 +1,43 @@
+.home__promo {
+	padding: 50px 0 100px;
+	background: url('../../../assets/assetsHome/assetsHomePromo/promoBg.jpg')
+		center/cover no-repeat;
+	&-title {
+		font-weight: 600;
+		font-size: 24px;
+		letter-spacing: 0.02em;
+		color: #f6fafd;
+		padding-bottom: 45px;
+	}
+	&-block {
+		display: flex;
+		flex-direction: column;
+		row-gap: 30px;
+		width: 45%;
+		&-item {
+			display: flex;
+			column-gap: 30px;
+			align-items: center;
+			padding: 20px;
+			background: #f6fafd;
+			box-shadow: 0px 16px 16px rgba(0, 0, 0, 0.04);
+			border-radius: 20px;
+		}
+	}
+	&-desc {
+		padding: 50px 0 40px;
+		font-weight: 600;
+		font-size: 20px;
+		letter-spacing: 0.02em;
+		color: #f6fafd;
+	}
+	&-btn {
+		font-weight: 700;
+		font-size: 24px;
+		letter-spacing: 0.02em;
+		color: #f6fafd;
+		padding: 20px 60px;
+		background: #5e4edb;
+		border-radius: 50px;
+	}
+}

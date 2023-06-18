@@ -1,0 +1,136 @@
+.header {
+	padding: 20px 0;
+	background: #f6fafd;
+	&.milk {
+		background: #f7f6ff;
+	}
+	&__nav {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		height: 80px;
+	}
+	&__left {
+		display: flex;
+		column-gap: 60px;
+		align-items: center;
+		&-menu {
+			display: flex;
+			column-gap: 40px;
+			&-link {
+				font-weight: 500;
+				font-size: 16px;
+				line-height: 20px;
+				color: #000000;
+				transition: 0.5s;
+				&.none {
+					display: none;
+				}
+				&.active {
+					color: #1dbf73;
+				}
+				&:hover {
+					color: #1dbf73;
+				}
+			}
+		}
+	}
+	&__right {
+		&-private {
+			display: flex;
+			align-items: center;
+			column-gap: 26px;
+			&-icons {
+				display: flex;
+				align-items: center;
+				column-gap: 30px;
+			}
+			&-icon {
+				fill: #b0aad0;
+				font-size: 24px;
+			}
+			&-profile {
+				position: relative;
+				&-arrow {
+					transition: 0.5s;
+					&.active {
+						transform: rotate(180deg);
+					}
+				}
+				&-trigger {
+					padding: 20px;
+					display: flex;
+					column-gap: 20px;
+					align-items: center;
+					&.active {
+						background: #f2f0fe;
+						border-radius: 20px;
+					}
+				}
+				&-popover {
+					z-index: 5;
+					position: absolute;
+					top: 100px;
+					padding: 20px;
+					left: 0;
+					width: 100%;
+					background: #f2f0fe;
+					border-bottom-left-radius: 20px;
+					border-bottom-right-radius: 20px;
+					display: flex;
+					flex-direction: column;
+					row-gap: 16px;
+				}
+				&-list {
+					display: flex;
+					flex-direction: column;
+					row-gap: 10px;
+				}
+				&-item {
+					font-weight: 400;
+					font-size: 16px;
+					color: #000000;
+					cursor: pointer;
+					&.red {
+						color: #ff4343;
+					}
+				}
+				&-role {
+					display: flex;
+					background: #ebe8ff;
+					border-radius: 100px;
+					&-btn {
+						padding: 10px 4px;
+						font-weight: 500;
+						font-size: 14px;
+						width: 50%;
+						color: #000000;
+						&.active {
+							font-weight: 600;
+							background: #fba457;
+							border-radius: 20px;
+							color: #ffffff;
+						}
+					}
+				}
+				&-name {
+					font-weight: 600;
+					font-size: 16px;
+				}
+				&-avatar {
+					width: 80px;
+					object-fit: cover;
+					aspect-ratio: 1 / 1;
+					border-radius: 50%;
+				}
+			}
+		}
+		&-auth {
+			display: flex;
+			column-gap: 30px;
+			&-btn {
+				padding: 10px 30px;
+			}
+		}
+	}
+}

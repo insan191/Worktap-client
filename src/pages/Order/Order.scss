@@ -1,0 +1,52 @@
+.order {
+	padding: 60px 0;
+	&__info {
+		display: flex;
+		column-gap: 30px;
+	}
+	&__main {
+		border: 1px solid #f2f0fe;
+		border-radius: 20px;
+		width: 60%;
+		padding: 20px;
+		&-top {
+			justify-content: space-between;
+			display: flex;
+			column-gap: 80px;
+		}
+		&-title {
+			font-weight: 600;
+			font-size: 24px;
+			line-height: 29px;
+			color: #000000;
+		}
+		&-budget {
+			font-weight: 600;
+			font-size: 18px;
+			color: #1dbf73;
+			margin-bottom: 24px;
+		}
+		&-deadline {
+			font-weight: 500;
+			font-size: 16px;
+			color: #656084;
+		}
+		&-breadcrumbs {
+			margin: 20px 0;
+			display: flex;
+			column-gap: 8px;
+			align-items: center;
+			&-item {
+				font-weight: 400;
+				font-size: 14px;
+				color: #b0aad0;
+			}
+		}
+		&-description {
+			font-weight: 400;
+			font-size: 16px;
+			line-height: 20px;
+			color: #000000;
+		}
+	}
+}

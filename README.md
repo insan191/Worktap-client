@@ -13,9 +13,9 @@ WorkTap is a freelance marketplace that connects employers and freelancers, prov
 * MongoDB for data storage.
 ## Installation and Setup
 * Clone the repository: git clone https://github.com/insan191/Worktap-client.git
-* Navigate to the project directory: cd Worktap-client
-* Install dependencies: npm install
-* Run the application: npm run start
+* Navigate to the project directory: `cd Worktap-client`
+* Install dependencies: `npm install`
+* Run the application: `npm run start`
 
 That was the client-side. If you want to view the server-side, please follow this link: https://github.com/insan191/Worktap-server.git 
   

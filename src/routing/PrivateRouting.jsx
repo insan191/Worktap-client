@@ -10,7 +10,6 @@ import MyProfile from '../pages/MyProfile/MyProfile'
 import Order from '../pages/Order/Order'
 import Work from '../pages/Work/Work'
 import Works from '../pages/Works/Works'
-import Favorites from '../pages/Favorites/Favorites'
 const PrivateRouting = () => {
 	return (
 		<Routes>
@@ -23,7 +22,6 @@ const PrivateRouting = () => {
 				<Route path='myprofile/:id' element={<MyProfile />} />
 				<Route path='work/:id' element={<Work />} />
 				<Route path='works' element={<Works />} />
-				<Route path='favorites' element={<Favorites />} />
 				<Route path='order/:id' element={<Order />} />
 				<Route path='creatework' element={<CreateWork />} />
 				<Route path='createorder' element={<CreateOrder />} />

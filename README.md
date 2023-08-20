@@ -19,3 +19,4 @@ WorkTap is a freelance marketplace that connects employers and freelancers, prov
 
 That was the client-side. If you want to view the server-side, please follow this link: https://github.com/insan191/Worktap-server.git 
   
+![Screen](https://github.com/insan191/Worktap-client/blob/main/screen.png)
